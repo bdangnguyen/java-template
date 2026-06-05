@@ -1,7 +1,35 @@
-# Compiled class file
+# Compiled class files
 *.class
 
-# Visual Studio Code
-*.vscode
+# Log files
+*.log
 
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven
 target/
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

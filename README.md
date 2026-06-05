@@ -1,10 +1,45 @@
-# README
+# java-template
 
-This is the Java 21 project template I use with [Maven](https://maven.apache.org/) as the build tool. It has [JUnit5](https://junit.org/junit5/) as the testing framework. and [AssertJ](https://assertj.github.io/doc/) to provide more powerful assertions.
+A Java 25 (LTS) project template using [Maven](https://maven.apache.org/) as the build tool, [JUnit 5](https://junit.org/junit5/) as the testing framework, and [AssertJ](https://assertj.github.io/doc/) for fluent assertions.
 
-## Installation
-1. Install directly using Maven using ```mvn clean install```.
-2. Run the included pom.xml with IDE of choice
+## Requirements
+
+- Java 25 (LTS)
+- Maven 3.9+
+
+## Getting Started
+
+Clone the repo and build:
+
+```bash
+mvn clean install
+```
+
+Run the application:
+
+```bash
+java -jar target/template-1.0-SNAPSHOT.jar
+```
 
 ## Testing
-Tests can be ran using ``` mvn clean test```
+
+```bash
+mvn clean test
+```
+
+## Project Structure
+
+```
+src/
+├── main/java/com/java/template/
+│   └── Main.java
+└── test/java/com/java/template/
+    └── MainTest.java
+```
+
+## Dependencies
+
+| Dependency | Version | Scope |
+|---|---|---|
+| JUnit Jupiter | 5.12.0 | test |
+| AssertJ | 3.27.0 | test |
