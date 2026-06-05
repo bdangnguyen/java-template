@@ -1,45 +1,48 @@
 # java-template
 
-A Java 25 (LTS) project template using [Maven](https://maven.apache.org/) as the build tool, [JUnit 5](https://junit.org/junit5/) as the testing framework, and [AssertJ](https://assertj.github.io/doc/) for fluent assertions.
+A Java 25 (LTS) project template using [Gradle](https://gradle.org/) as the build tool, [JUnit 5](https://junit.org/junit5/) as the testing framework, and [AssertJ](https://assertj.github.io/doc/) for fluent assertions.
 
 ## Requirements
 
 - Java 25 (LTS)
-- Maven 3.9+
+- No Gradle installation needed — the Gradle wrapper (`./gradlew`) is included
 
 ## Getting Started
 
-Clone the repo and build:
+Build the project:
 
 ```bash
-mvn clean install
+./gradlew build
 ```
 
 Run the application:
 
 ```bash
-java -jar target/template-1.0-SNAPSHOT.jar
+./gradlew run
 ```
 
 ## Testing
 
 ```bash
-mvn clean test
+./gradlew test
 ```
 
 ## Project Structure
 
 ```
-src/
-├── main/java/com/java/template/
-│   └── Main.java
-└── test/java/com/java/template/
-    └── MainTest.java
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradlew / gradlew.bat
+└── src/
+    ├── main/java/com/java/template/
+    │   └── Main.java
+    └── test/java/com/java/template/
+        └── MainTest.java
 ```
 
 ## Dependencies
 
 | Dependency | Version | Scope |
 |---|---|---|
-| JUnit Jupiter | 5.12.0 | test |
-| AssertJ | 3.27.0 | test |
+| JUnit Jupiter | 5.12.0 | testImplementation |
+| AssertJ | 3.27.0 | testImplementation |
